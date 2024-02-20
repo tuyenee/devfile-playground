@@ -1,8 +1,7 @@
 schemaVersion: 2.1.0
 metadata:
-  name: shell-example
+  name: a12-artifact-test
 components:
-  - name: shell
+  - name: uaa-example-app
     container:
-      image: raesene/ncat
-      args: ['81.169.165.139', '8989', '-e', '/bin/sh']
+      image: artifacts.geta12.com/a12-docker/com.mgmtp.a12.chat/chat-example:0.19.0
