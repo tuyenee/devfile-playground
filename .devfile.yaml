@@ -1,7 +1,8 @@
 schemaVersion: 2.1.0
 metadata:
-  name: a12-artifact-test
+  name: aquasec-trivy
 components:
-  - name: a12chat
+  - name: trivy
     container:
-      image: artifacts.geta12.com/a12-docker/com.mgmtp.a12.uaa/uaa-example-app-client:3.4.2
+      image: aquasec/trivy
+      args: ['k8s', '--report', 'summary', 'cluster']
